@@ -1,0 +1,136 @@
+Watching for file changes with StatReloader
+"GET /userprofile/login/ HTTP/1.1" 200 6174
+"GET /userprofile/login/ HTTP/1.1" 200 6174
+"GET /userprofile/login/ HTTP/1.1" 200 6174
+Not Found: /CLodopfuncs.js
+"GET /CLodopfuncs.js?priority=1 HTTP/1.1" 404 2904
+"GET /article/article-create/ HTTP/1.1" 302 0
+"GET /userprofile/login/?next=/article/article-create/ HTTP/1.1" 200 6174
+"GET /static/bootstrap/css/bootstrap.css HTTP/1.1" 200 173597
+"GET /static/bootstrap/js/bootstrap.js HTTP/1.1" 200 123765
+"GET /static/jquery/jquery-3.6.0.js HTTP/1.1" 200 89501
+"GET /static/md_css/monokai.css HTTP/1.1" 200 9416
+"GET /static/layer/layer.js HTTP/1.1" 200 22730
+"GET /static/layer/theme/default/layer.css HTTP/1.1" 200 14271
+Watching for file changes with StatReloader
+Internal Server Error: /article/article-detail/9999/
+Traceback (most recent call last):
+  File "D:\A_JFKJ\django项目\django_project\env\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\A_JFKJ\django项目\django_project\env\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\A_JFKJ\django项目\django_project\env\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\A_JFKJ\django项目\django_project\my_blog\article\views.py", line 78, in article_detail
+    article = ArticlePost.objects.get(id=id)
+  File "D:\A_JFKJ\django项目\django_project\env\lib\site-packages\django\db\models\manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "D:\A_JFKJ\django项目\django_project\env\lib\site-packages\django\db\models\query.py", line 408, in get
+    self.model._meta.object_name
+article.models.ArticlePost.DoesNotExist: ArticlePost matching query does not exist.
+"GET /article/article-detail/9999/ HTTP/1.1" 500 82847
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 2884
+D:\A_JFKJ\django项目\django_project\my_blog\article\views.py changed, reloading.
+Watching for file changes with StatReloader
+Not Found: /article/article-detail/9999/
+"GET /article/article-detail/9999/ HTTP/1.1" 404 1780
+D:\A_JFKJ\django项目\django_project\my_blog\my_blog\settings.py changed, reloading.
+ERROR 2022-01-10 13:30:16,730 log 22296 23148 Internal Server Error: /article/article-list/
+Traceback (most recent call last):
+  File "D:\A_JFKJ\django项目\django_project\env\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\A_JFKJ\django项目\django_project\env\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\A_JFKJ\django项目\django_project\env\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\A_JFKJ\django项目\django_project\my_blog\article\views.py", line 72, in article_list
+    return render(request, 'article/list.html', context)
+  File "D:\A_JFKJ\django项目\django_project\env\lib\site-packages\django\shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\A_JFKJ\django项目\django_project\env\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "D:\A_JFKJ\django项目\django_project\env\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "D:\A_JFKJ\django项目\django_project\env\lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "D:\A_JFKJ\django项目\django_project\env\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "D:\A_JFKJ\django项目\django_project\env\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "D:\A_JFKJ\django项目\django_project\env\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "D:\A_JFKJ\django项目\django_project\env\lib\site-packages\django\template\loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "D:\A_JFKJ\django项目\django_project\env\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "D:\A_JFKJ\django项目\django_project\env\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "D:\A_JFKJ\django项目\django_project\env\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "D:\A_JFKJ\django项目\django_project\env\lib\site-packages\django\template\loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "D:\A_JFKJ\django项目\django_project\env\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "D:\A_JFKJ\django项目\django_project\env\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "D:\A_JFKJ\django项目\django_project\env\lib\site-packages\django\template\defaulttags.py", line 209, in render
+    nodelist.append(node.render_annotated(context))
+  File "D:\A_JFKJ\django项目\django_project\env\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "D:\A_JFKJ\django项目\django_project\env\lib\site-packages\django\template\base.py", line 987, in render
+    output = self.filter_expression.resolve(context)
+  File "D:\A_JFKJ\django项目\django_project\env\lib\site-packages\django\template\base.py", line 698, in resolve
+    new_obj = func(obj, *arg_vals)
+  File "D:\A_JFKJ\django项目\django_project\my_blog\article\templatetags\my_filters_and_tags.py", line 28, in time_since_zh
+    now = timezone.now()
+AttributeError: type object 'datetime.timezone' has no attribute 'now'
+ERROR 2022-01-10 13:30:18,161 log 22296 23148 Internal Server Error: /article/article-list/
+Traceback (most recent call last):
+  File "D:\A_JFKJ\django项目\django_project\env\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\A_JFKJ\django项目\django_project\env\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\A_JFKJ\django项目\django_project\env\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\A_JFKJ\django项目\django_project\my_blog\article\views.py", line 72, in article_list
+    return render(request, 'article/list.html', context)
+  File "D:\A_JFKJ\django项目\django_project\env\lib\site-packages\django\shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\A_JFKJ\django项目\django_project\env\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "D:\A_JFKJ\django项目\django_project\env\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "D:\A_JFKJ\django项目\django_project\env\lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "D:\A_JFKJ\django项目\django_project\env\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "D:\A_JFKJ\django项目\django_project\env\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "D:\A_JFKJ\django项目\django_project\env\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "D:\A_JFKJ\django项目\django_project\env\lib\site-packages\django\template\loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "D:\A_JFKJ\django项目\django_project\env\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "D:\A_JFKJ\django项目\django_project\env\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "D:\A_JFKJ\django项目\django_project\env\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "D:\A_JFKJ\django项目\django_project\env\lib\site-packages\django\template\loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "D:\A_JFKJ\django项目\django_project\env\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "D:\A_JFKJ\django项目\django_project\env\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "D:\A_JFKJ\django项目\django_project\env\lib\site-packages\django\template\defaulttags.py", line 209, in render
+    nodelist.append(node.render_annotated(context))
+  File "D:\A_JFKJ\django项目\django_project\env\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "D:\A_JFKJ\django项目\django_project\env\lib\site-packages\django\template\base.py", line 987, in render
+    output = self.filter_expression.resolve(context)
+  File "D:\A_JFKJ\django项目\django_project\env\lib\site-packages\django\template\base.py", line 698, in resolve
+    new_obj = func(obj, *arg_vals)
+  File "D:\A_JFKJ\django项目\django_project\my_blog\article\templatetags\my_filters_and_tags.py", line 28, in time_since_zh
+    now = timezone.now()
+AttributeError: type object 'datetime.timezone' has no attribute 'now'
